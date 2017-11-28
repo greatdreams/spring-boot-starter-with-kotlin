@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: spring-boot-starter-with-kotlin
+
+student:
+  id: 00002
+  name: Chunyang Zhang
+  age: 27
+  email: 123456@qq.com
