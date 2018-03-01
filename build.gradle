@@ -1,7 +1,7 @@
 buildscript {
-    ext.kotlin_version = '1.1.61'
-    ext.dokka_version = "0.9.15"
-    ext.springboot_version = '2.0.0.M6'
+    ext.kotlin_version = '1.2.21'
+    ext.dokka_version = "0.9.16"
+    ext.springboot_version = '2.0.0.RELEASE'
 
     repositories {
         jcenter()
@@ -75,7 +75,7 @@ dependencies {
         exclude group: 'org.junit.platform'
         exclude group: 'org.jetbrains.kotlin'
     }
-    testCompile 'org.junit.platform:junit-platform-console:1.0.1'
+    testCompile 'org.junit.platform:junit-platform-console:1.1.0'
     testCompile "org.amshove.kluent:kluent:$kluentVersion"
     testCompile "com.natpryce:hamkrest:$harmkrest"
     testCompile "com.winterbe:expekt:${winterbVersion}"
@@ -88,7 +88,7 @@ allOpen {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = "4.3.1"
+    gradleVersion = "4.6"
 }
 
 
